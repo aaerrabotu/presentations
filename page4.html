@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Venn Diagram Configuration 3</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>3-Set Venn Diagram</h1>
+    <div class="venn-diagram">
+      <img src="triple.png" alt="Three overlapping circles" width="400">
+    </div>
+    <div class="logic-expression">
+      <h2>Logic Expressions for 2^3</h2>
+      <p>000: not A, not B, not C</p>
+      <p>001: A, not B, not C</p>
+      <p>010: not A, B, not C</p>
+      <p>011: A, B, not C</p>
+      <p>100: not A, not B, C</p>
+      <p>101: A, not B, C</p>
+      <p>110: not A, B, C</p>
+      <p>111: A, B, C</p>
+    </div>
+    <div class="coordinates">
+      <h2>Coordinates</h2>
+      <p>The coordinates (x, y, z, etc.) in the space with dimensions equal to the number of sets:</p>
+      <ul>
+        <li><strong>000:</strong> (0, 0, 0)</li>
+        <li><strong>001:</strong> (0, 0, 1)</li>
+        <li><strong>010:</strong> (0, 1, 0)</li>
+        <li><strong>011:</strong> (0, 1, 1)</li>
+        <li><strong>100:</strong> (1, 0, 0)</li>
+        <li><strong>101:</strong> (1, 0, 1)</li>
+        <li><strong>110:</strong> (1, 1, 0)</li>
+        <li><strong>111:</strong> (1, 1, 1)</li>
+      </ul>
+    </div>
+    <div class="logic-explanation">
+      <h2>Logic Explanation</h2>
+      <p>In this configuration, we have three sets denoted as A, B, and C. The logic expressions for 2^3 (2 raised to the power of 3) represent the possible states of these sets:</p>
+      <div class="logic-explanation-text">
+        <p><strong>000:</strong> not A, not B, not C - Indicates that the element is not part of set A, B, or C.</p>
+        <p><strong>001:</strong> A, not B, not C - Indicates that the element belongs to set A but not part of set B or C.</p>
+        <p><strong>010:</strong> not A, B, not C - Indicates that the element is not part of set A but belongs to set B, not part of set C.</p>
+        <p><strong>011:</strong> A, B, not C - Indicates that the element belongs to both set A and set B, but not part of set C.</p>
+        <p><strong>100:</strong> not A, not B, C - Indicates that the element is not part of set A or B, but belongs to set C. </p>
+        <p><strong>101:</strong> A, not B, C - Indicates that the element belongs to set A and set C, but not part of set B.</p>
+        <p><strong>110:</strong> not A, B, C - Indicates that the element is not part of set A or C, but belongs to set B.</p>
+        <p><strong>111:</strong> A, B, C - Indicates that the element belongs to all three sets A, B, and C.</p>
+      </div>
+    </div>
+    <div class="navigation">
+      <a href="page3.html">&lt; Previous</a>
+      <a href="page5.html">Next &gt;</a>
+    </div>
+  </div>
+</body>
+
+</html>
