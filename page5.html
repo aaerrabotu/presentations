@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Venn Diagram Configuration 4</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>4-Set Venn Diagram</h1>
+    <div class="venn-diagram">
+      <img src="four.png" alt="Four overlapping ovals" width="400">
+    </div>
+    <div class="logic-expression">
+      <h2>Logic Expressions for 2^4</h2>
+      <p>0000: not A, not B, not C, not D</p>
+      <p>0001: A, not B, not C, not D</p>
+      <p>0010: not A, B, not C, not D</p>
+      <p>0011: A, B, not C, not D</p>
+      <p>0100: not A, not B, C, not D</p>
+      <p>0101: A, not B, C, not D</p>
+      <p>0110: not A, B, C, not D</p>
+      <p>0111: A, B, C, not D</p>
+      <p>1000: not A, not B, not C, D</p>
+      <p>1001: A, not B, not C, D</p>
+      <p>1010: not A, B, not C, D</p>
+      <p>1011: A, B, not C, D</p>
+      <p>1100: not A, not B, C, D</p>
+      <p>1101: A, not B, C, D</p>
+      <p>1110: not A, B, C, D</p>
+      <p>1111: A, B, C, D</p>
+    </div>
+    <div class="coordinates">
+      <h2>Coordinates</h2>
+      <p>The coordinates (x, y, z, w, etc.) in the space with dimensions equal to the number of sets:</p>
+      <ul>
+        <li><strong>0000:</strong> (0, 0, 0, 0)</li>
+        <li><strong>0001:</strong> (0, 0, 0, 1)</li>
+        <li><strong>0010:</strong> (0, 0, 1, 0)</li>
+        <li><strong>0011:</strong> (0, 0, 1, 1)</li>
+        <li><strong>0100:</strong> (0, 1, 0, 0)</li>
+        <li><strong>0101:</strong> (0, 1, 0, 1)</li>
+        <li><strong>0110:</strong> (0, 1, 1, 0)</li>
+        <li><strong>0111:</strong> (0, 1, 1, 1)</li>
+        <li><strong>1000:</strong> (1, 0, 0, 0)</li>
+        <li><strong>1001:</strong> (1, 0, 0, 1)</li>
+        <li><strong>1010:</strong> (1, 0, 1, 0)</li>
+        <li><strong>1011:</strong> (1, 0, 1, 1)</li>
+        <li><strong>1100:</strong> (1, 1, 0, 0)</li>
+        <li><strong>1101:</strong> (1, 1, 0, 1)</li>
+        <li><strong>1110:</strong> (1, 1, 1, 0)</li>
+        <li><strong>1111:</strong> (1, 1, 1, 1)</li>
+      </ul>
+    </div>
+    <div class="logic-explanation">
+        <h2>Logic Explanation</h2>
+        <p>In this configuration, we have four sets denoted as A, B, C, and D. The logic expressions for 2^4 (2 raised to the power of 4) represent the possible states of these sets:</p>
+        <div class="logic-explanation-text">
+            <p><strong>0000:</strong> not A, not B, not C, not D - Indicates that the element is not part of any of the sets A, B, C, or D.</p>
+            <p><strong>0001:</strong> A, not B, not C, not D - Indicates that the element belongs to set A only, and not part of sets B, C, or D.</p>
+            <p><strong>0010:</strong> not A, B, not C, not D - Indicates that the element belongs to set B only, and not part of sets A, C, or D.</p>
+            <p><strong>0011:</strong> A, B, not C, not D - Indicates that the element belongs to both sets A and B, and not part of sets C or D.</p>
+            <p><strong>0100:</strong> not A, not B, C, not D - Indicates that the element belongs to set C only, and not part of sets A, B, or D.</p>
+            <p><strong>0101:</strong> A, not B, C, not D - Indicates that the element belongs to sets A and C, and not part of sets B or D.</p>
+            <p><strong>0110:</strong> not A, B, C, not D - Indicates that the element belongs to sets B and C, and not part of sets A or D.</p>
+            <p><strong>0111:</strong> A, B, C, not D - Indicates that the element belongs to sets A, B, and C, and not part of set D.</p>
+            <p><strong>1000:</strong> not A, not B, not C, D - Indicates that the element belongs to set D only, and not part of sets A, B, or C.</p>
+            <p><strong>1001:</strong> A, not B, not C, D - Indicates that the element belongs to sets A and D, and not part of sets B or C.</p>
+            <p><strong>1010:</strong> not A, B, not C, D - Indicates that the element belongs to sets B and D, and not part of sets A or C.</p>
+            <p><strong>1011:</strong> A, B, not C, D - Indicates that the element belongs to sets A, B, and D, and not part of set C.</p>
+            <p><strong>1100:</strong> not A, not B, C, D - Indicates that the element belongs to sets C and D, and notpart of sets A or B.</p>
+            <p><strong>1101:</strong> A, not B, C, D - Indicates that the element belongs to sets A, C, and D, and not part of set B.</p>
+            <p><strong>1110:</strong> not A, B, C, D - Indicates that the element belongs to sets B, C, and D, and not part of set A.</p>
+            <p><strong>1111:</strong> A, B, C, D - Indicates that the element belongs to all four sets A, B, C, and D.</p>
+        </div>
+        <img src="alternate.png" alt="Alternate Representation of 4-Set Venn Diagram" width="400">
+        <p>This is an alternate representation of a four set venn diagram and also explains why we cannot utilize circles moving forward to represent our venn diagrams. Evidently, the ovals are preferred as they offer a cleaner and more visually appealing and user friendly representation. However, this is something to keep in mind as an alternate resolution! </p>
+      </div>
+      <div class="navigation">
+        <a href="page4.html">&lt; Previous</a>
+        <a href="page6.html">Next &gt;</a>
+      </div>
+    </div>
+  </body>
+  </html>

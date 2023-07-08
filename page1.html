@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sequence of Venn Diagrams</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      padding-top: 20px;
+      font-size: 32px;
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .venn-diagram {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      opacity: 0; /* Start with opacity set to 0 */
+      animation: fade-in 1s ease-in-out forwards; /* Animation to fade in the diagram */
+    }
+
+    .venn-diagram img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .venn-diagram.two-circle {
+      animation-name: transform-to-two-circle;
+      animation-delay: 1s;
+    }
+
+    @keyframes transform-to-two-circle {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+  <script>
+    // JavaScript to delay the appearance of each Venn Diagram
+    document.addEventListener("DOMContentLoaded", function() {
+      var vennDiagrams = document.querySelectorAll(".venn-diagram");
+
+      for (var i = 0; i < vennDiagrams.length; i++) {
+        (function(index) {
+          setTimeout(function() {
+            vennDiagrams[index].style.opacity = 1;
+          }, (index + 1) * 1000); // Delay appearance by 1 second for each diagram
+        })(i);
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Sequence of Venn Diagrams</h1>
+    <div class="venn-diagram">
+      <img src="1_circle_venn_diagram.png" alt="1 Circle Venn Diagram">
+    </div>
+    <div class="venn-diagram two-circle">
+      <img src="2_circle_venn_diagram.png" alt="2 Circle Venn Diagram">
+    </div>
+  </div>
+</body>
+</html>
